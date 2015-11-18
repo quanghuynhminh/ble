@@ -1,0 +1,1833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="Include">
+        <df name="RTT">
+          <in>SEGGER_RTT.c</in>
+          <in>SEGGER_RTT_printf.c</in>
+        </df>
+        <df name="Syscalls">
+          <in>RTT_Syscalls_GCC.c</in>
+          <in>RTT_Syscalls_IAR.c</in>
+          <in>RTT_Syscalls_KEIL.c</in>
+        </df>
+      </df>
+      <df name="RTE">
+        <df name="Device">
+          <df name="nRF51822_xxAA">
+            <in>system_nrf51.c</in>
+          </df>
+          <df name="nRF51822_xxAB">
+            <in>system_nrf51.c</in>
+          </df>
+        </df>
+      </df>
+      <df name="Source">
+        <df name="app_common">
+          <in>app_button.c</in>
+          <in>app_fifo.c</in>
+          <in>app_gpiote.c</in>
+          <in>app_scheduler.c</in>
+          <in>app_timer.c</in>
+          <in>app_trace.c</in>
+          <in>app_uart.c</in>
+          <in>app_uart_fifo.c</in>
+          <in>crc16.c</in>
+          <in>hci_mem_pool.c</in>
+          <in>hci_slip.c</in>
+          <in>hci_transport.c</in>
+          <in>pstorage.c</in>
+        </df>
+        <df name="ble">
+          <df name="ble_services">
+            <in>ble_ans_c.c</in>
+            <in>ble_bas.c</in>
+            <in>ble_bas_c.c</in>
+            <in>ble_bps.c</in>
+            <in>ble_cis.c</in>
+            <in>ble_cscs.c</in>
+            <in>ble_dfu.c</in>
+            <in>ble_dis.c</in>
+            <in>ble_gls.c</in>
+            <in>ble_gls_db.c</in>
+            <in>ble_hids.c</in>
+            <in>ble_hrs.c</in>
+            <in>ble_hrs_c.c</in>
+            <in>ble_hts.c</in>
+            <in>ble_ias.c</in>
+            <in>ble_ias_c.c</in>
+            <in>ble_lls.c</in>
+            <in>ble_rscs.c</in>
+            <in>ble_sc_ctrlpt.c</in>
+            <in>ble_srv_common.c</in>
+            <in>ble_tps.c</in>
+          </df>
+          <df name="device_manager">
+            <in>device_manager_central.c</in>
+            <in>device_manager_peripheral.c</in>
+          </df>
+          <in>ble_advdata.c</in>
+          <in>ble_advdata_parser.c</in>
+          <in>ble_conn_params.c</in>
+          <in>ble_db_discovery.c</in>
+          <in>ble_debug_assert_handler.c</in>
+          <in>ble_dtm.c</in>
+          <in>ble_error_log.c</in>
+          <in>ble_flash.c</in>
+          <in>ble_racp.c</in>
+          <in>ble_radio_notification.c</in>
+          <in>ble_sensorsim.c</in>
+        </df>
+        <df name="bootloader_dfu">
+          <in>bootloader.c</in>
+          <in>bootloader_settings_arm.c</in>
+          <in>bootloader_util_arm.c</in>
+          <in>bootloader_util_gcc.c</in>
+          <in>dfu_app_handler.c</in>
+          <in>dfu_dual_bank.c</in>
+          <in>dfu_single_bank.c</in>
+          <in>dfu_transport_ble.c</in>
+          <in>dfu_transport_serial.c</in>
+        </df>
+        <df name="console">
+          <in>console.c</in>
+        </df>
+        <df name="ext_sensors">
+          <df name="adns2080">
+            <in>adns2080.c</in>
+          </df>
+          <df name="cherry8x16">
+            <in>cherry8x16.c</in>
+          </df>
+          <df name="ds1624">
+            <in>ds1624.c</in>
+          </df>
+          <df name="mpu6050">
+            <in>mpu6050.c</in>
+          </df>
+          <df name="nrf6350">
+            <in>nrf6350.c</in>
+          </df>
+          <df name="sdio">
+            <in>sdio.c</in>
+          </df>
+          <df name="synaptics_touchpad">
+            <in>synaptics_touchpad.c</in>
+          </df>
+        </df>
+        <df name="gzp">
+          <in>nrf_gzp.c</in>
+          <in>nrf_gzp_device.c</in>
+          <in>nrf_gzp_host.c</in>
+          <in>nrf_gzp_host_nrf51.c</in>
+        </df>
+        <df name="nrf_assert">
+          <in>nrf_assert.c</in>
+        </df>
+        <df name="nrf_delay">
+          <in>nrf_delay.c</in>
+        </df>
+        <df name="nrf_ecb">
+          <in>nrf_ecb.c</in>
+        </df>
+        <df name="nrf_nvmc">
+          <in>nrf_nvmc.c</in>
+        </df>
+        <df name="sd_common">
+          <in>softdevice_handler.c</in>
+        </df>
+        <df name="sdk_soc">
+          <in>nrf_soc.c</in>
+        </df>
+        <df name="serialization">
+          <df name="application">
+            <df name="codecs">
+              <df name="common">
+                <in>ble_dtm_app.c</in>
+                <in>ble_dtm_init.c</in>
+              </df>
+              <df name="s110">
+                <df name="middleware">
+                  <in>app_mw_ble.c</in>
+                  <in>app_mw_ble_gap.c</in>
+                  <in>app_mw_ble_gattc.c</in>
+                  <in>app_mw_ble_gatts.c</in>
+                  <in>app_mw_ble_l2cap.c</in>
+                  <in>app_mw_nrf_soc.c</in>
+                </df>
+                <df name="serializers">
+                  <in>ble_enable.c</in>
+                  <in>ble_event.c</in>
+                  <in>ble_evt_tx_complete.c</in>
+                  <in>ble_gap_address_get.c</in>
+                  <in>ble_gap_address_set.c</in>
+                  <in>ble_gap_adv_data_set.c</in>
+                  <in>ble_gap_adv_start.c</in>
+                  <in>ble_gap_adv_stop.c</in>
+                  <in>ble_gap_appearance_get.c</in>
+                  <in>ble_gap_appearance_set.c</in>
+                  <in>ble_gap_auth_key_reply.c</in>
+                  <in>ble_gap_authenticate.c</in>
+                  <in>ble_gap_conn_param_update.c</in>
+                  <in>ble_gap_conn_sec_get.c</in>
+                  <in>ble_gap_device_name_get.c</in>
+                  <in>ble_gap_device_name_set.c</in>
+                  <in>ble_gap_disconnect.c</in>
+                  <in>ble_gap_evt_auth_key_request.c</in>
+                  <in>ble_gap_evt_auth_status.c</in>
+                  <in>ble_gap_evt_conn_param_update.c</in>
+                  <in>ble_gap_evt_conn_sec_update.c</in>
+                  <in>ble_gap_evt_connected.c</in>
+                  <in>ble_gap_evt_disconnected.c</in>
+                  <in>ble_gap_evt_passkey_display.c</in>
+                  <in>ble_gap_evt_rssi_changed.c</in>
+                  <in>ble_gap_evt_sec_info_request.c</in>
+                  <in>ble_gap_evt_sec_params_request.c</in>
+                  <in>ble_gap_evt_timeout.c</in>
+                  <in>ble_gap_ppcp_get.c</in>
+                  <in>ble_gap_ppcp_set.c</in>
+                  <in>ble_gap_rssi_start.c</in>
+                  <in>ble_gap_rssi_stop.c</in>
+                  <in>ble_gap_sec_info_reply.c</in>
+                  <in>ble_gap_sec_params_reply.c</in>
+                  <in>ble_gap_tx_power_set.c</in>
+                  <in>ble_gattc_char_value_by_uuid_read.c</in>
+                  <in>ble_gattc_char_values_read.c</in>
+                  <in>ble_gattc_characteristics_discover.c</in>
+                  <in>ble_gattc_descriptors_discover.c</in>
+                  <in>ble_gattc_evt_char_disc_rsp.c</in>
+                  <in>ble_gattc_evt_char_val_by_uuid_read_rsp.c</in>
+                  <in>ble_gattc_evt_char_vals_read_rsp.c</in>
+                  <in>ble_gattc_evt_desc_disc_rsp.c</in>
+                  <in>ble_gattc_evt_hvx.c</in>
+                  <in>ble_gattc_evt_prim_srvc_disc_rsp.c</in>
+                  <in>ble_gattc_evt_read_rsp.c</in>
+                  <in>ble_gattc_evt_rel_disc_rsp.c</in>
+                  <in>ble_gattc_evt_timeout.c</in>
+                  <in>ble_gattc_evt_write_rsp.c</in>
+                  <in>ble_gattc_hv_confirm.c</in>
+                  <in>ble_gattc_primary_services_discover.c</in>
+                  <in>ble_gattc_read.c</in>
+                  <in>ble_gattc_relationships_discover.c</in>
+                  <in>ble_gattc_write.c</in>
+                  <in>ble_gatts_characteristic_add.c</in>
+                  <in>ble_gatts_descriptor_add.c</in>
+                  <in>ble_gatts_evt_hvc.c</in>
+                  <in>ble_gatts_evt_rw_authorize_request.c</in>
+                  <in>ble_gatts_evt_sc_confirm.c</in>
+                  <in>ble_gatts_evt_sys_attr_missing.c</in>
+                  <in>ble_gatts_evt_timeout.c</in>
+                  <in>ble_gatts_evt_write.c</in>
+                  <in>ble_gatts_hvx.c</in>
+                  <in>ble_gatts_include_add.c</in>
+                  <in>ble_gatts_rw_authorize_reply.c</in>
+                  <in>ble_gatts_service_add.c</in>
+                  <in>ble_gatts_service_changed.c</in>
+                  <in>ble_gatts_sys_attr_get.c</in>
+                  <in>ble_gatts_sys_attr_set.c</in>
+                  <in>ble_gatts_value_get.c</in>
+                  <in>ble_gatts_value_set.c</in>
+                  <in>ble_l2cap_cid_register.c</in>
+                  <in>ble_l2cap_cid_unregister.c</in>
+                  <in>ble_l2cap_evt_rx.c</in>
+                  <in>ble_l2cap_tx.c</in>
+                  <in>ble_opt_get.c</in>
+                  <in>ble_opt_set.c</in>
+                  <in>ble_tx_buffer_count_get.c</in>
+                  <in>ble_uuid_decode.c</in>
+                  <in>ble_uuid_encode.c</in>
+                  <in>ble_uuid_vs_add.c</in>
+                  <in>ble_version_get.c</in>
+                  <in>power_system_off.c</in>
+                  <in>temp_get.c</in>
+                </df>
+              </df>
+            </df>
+            <df name="hal">
+              <in>app_gpiote_fast_detect.c</in>
+              <in>app_util_platform.c</in>
+              <in>pstorage.c</in>
+              <in>ser_app_hal_nrf51.c</in>
+              <in>ser_app_power_system_off.c</in>
+              <in>ser_phy_nrf51_spi_5W_master.c</in>
+              <in>ser_phy_nrf51_spi_master.c</in>
+              <in>ser_phy_nrf51_uart_stm_app.c</in>
+              <in>spi_5W_master.c</in>
+            </df>
+            <df name="transport">
+              <in>app_mailbox.c</in>
+              <in>ser_sd_transport.c</in>
+              <in>ser_softdevice_handler.c</in>
+            </df>
+          </df>
+          <df name="common">
+            <df name="struct_ser">
+              <df name="s110">
+                <in>ble_gap_struct_serialization.c</in>
+                <in>ble_gattc_struct_serialization.c</in>
+                <in>ble_gatts_struct_serialization.c</in>
+                <in>ble_struct_serialization.c</in>
+              </df>
+            </df>
+            <df name="transport">
+              <df name="debug">
+                <in>debug_hci_nrf6310.c</in>
+              </df>
+              <in>ser_hal_transport.c</in>
+              <in>ser_phy.c</in>
+              <in>ser_phy_hci.c</in>
+              <in>ser_phy_hci_slip.c</in>
+              <in>ser_phy_nohci.c</in>
+              <in>ser_phy_nrf51_uart.c</in>
+            </df>
+            <in>ble_serialization.c</in>
+            <in>cond_field_serialization.c</in>
+          </df>
+          <df name="connectivity">
+            <df name="codecs">
+              <df name="common">
+                <in>ble_dtm_init.c</in>
+                <in>conn_mw.c</in>
+              </df>
+              <df name="s110">
+                <df name="middleware">
+                  <in>conn_mw_ble.c</in>
+                  <in>conn_mw_ble_gap.c</in>
+                  <in>conn_mw_ble_gattc.c</in>
+                  <in>conn_mw_ble_gatts.c</in>
+                  <in>conn_mw_ble_l2cap.c</in>
+                  <in>conn_mw_items.c</in>
+                  <in>conn_mw_nrf_soc.c</in>
+                </df>
+                <df name="serializers">
+                  <in>ble_enable.c</in>
+                  <in>ble_event.c</in>
+                  <in>ble_evt_tx_complete.c</in>
+                  <in>ble_gap_address_get.c</in>
+                  <in>ble_gap_address_set.c</in>
+                  <in>ble_gap_adv_data_set.c</in>
+                  <in>ble_gap_adv_start.c</in>
+                  <in>ble_gap_adv_stop.c</in>
+                  <in>ble_gap_appearance_get.c</in>
+                  <in>ble_gap_appearance_set.c</in>
+                  <in>ble_gap_auth_key_reply.c</in>
+                  <in>ble_gap_authenticate.c</in>
+                  <in>ble_gap_conn_param_update.c</in>
+                  <in>ble_gap_conn_sec_get.c</in>
+                  <in>ble_gap_device_name_get.c</in>
+                  <in>ble_gap_device_name_set.c</in>
+                  <in>ble_gap_disconnect.c</in>
+                  <in>ble_gap_evt_auth_key_request.c</in>
+                  <in>ble_gap_evt_auth_status.c</in>
+                  <in>ble_gap_evt_conn_param_update.c</in>
+                  <in>ble_gap_evt_conn_sec_update.c</in>
+                  <in>ble_gap_evt_connected.c</in>
+                  <in>ble_gap_evt_disconnected.c</in>
+                  <in>ble_gap_evt_passkey_display.c</in>
+                  <in>ble_gap_evt_rssi_changed.c</in>
+                  <in>ble_gap_evt_sec_info_request.c</in>
+                  <in>ble_gap_evt_sec_params_request.c</in>
+                  <in>ble_gap_evt_timeout.c</in>
+                  <in>ble_gap_ppcp_get.c</in>
+                  <in>ble_gap_ppcp_set.c</in>
+                  <in>ble_gap_rssi_start.c</in>
+                  <in>ble_gap_rssi_stop.c</in>
+                  <in>ble_gap_sec_info_reply.c</in>
+                  <in>ble_gap_sec_params_reply.c</in>
+                  <in>ble_gap_tx_power_set.c</in>
+                  <in>ble_gattc_char_value_by_uuid_read.c</in>
+                  <in>ble_gattc_char_values_read.c</in>
+                  <in>ble_gattc_characteristics_discover.c</in>
+                  <in>ble_gattc_descriptors_discover.c</in>
+                  <in>ble_gattc_evt_char_disc_rsp.c</in>
+                  <in>ble_gattc_evt_char_val_by_uuid_read_rsp.c</in>
+                  <in>ble_gattc_evt_char_vals_read_rsp.c</in>
+                  <in>ble_gattc_evt_desc_disc_rsp.c</in>
+                  <in>ble_gattc_evt_hvx.c</in>
+                  <in>ble_gattc_evt_prim_srvc_disc_rsp.c</in>
+                  <in>ble_gattc_evt_read_rsp.c</in>
+                  <in>ble_gattc_evt_rel_disc_rsp.c</in>
+                  <in>ble_gattc_evt_timeout.c</in>
+                  <in>ble_gattc_evt_write_rsp.c</in>
+                  <in>ble_gattc_hv_confirm.c</in>
+                  <in>ble_gattc_primary_services_discover.c</in>
+                  <in>ble_gattc_read.c</in>
+                  <in>ble_gattc_relationships_discover.c</in>
+                  <in>ble_gattc_write.c</in>
+                  <in>ble_gatts_characteristic_add.c</in>
+                  <in>ble_gatts_descriptor_add.c</in>
+                  <in>ble_gatts_evt_hvc.c</in>
+                  <in>ble_gatts_evt_rw_authorize_request.c</in>
+                  <in>ble_gatts_evt_sc_confirm.c</in>
+                  <in>ble_gatts_evt_sys_attr_missing.c</in>
+                  <in>ble_gatts_evt_timeout.c</in>
+                  <in>ble_gatts_evt_write.c</in>
+                  <in>ble_gatts_hvx.c</in>
+                  <in>ble_gatts_include_add.c</in>
+                  <in>ble_gatts_rw_authorize_reply.c</in>
+                  <in>ble_gatts_service_add.c</in>
+                  <in>ble_gatts_service_changed.c</in>
+                  <in>ble_gatts_sys_attr_get.c</in>
+                  <in>ble_gatts_sys_attr_set.c</in>
+                  <in>ble_gatts_value_get.c</in>
+                  <in>ble_gatts_value_set.c</in>
+                  <in>ble_l2cap_cid_register.c</in>
+                  <in>ble_l2cap_cid_unregister.c</in>
+                  <in>ble_l2cap_evt_rx.c</in>
+                  <in>ble_l2cap_tx.c</in>
+                  <in>ble_opt_get.c</in>
+                  <in>ble_opt_id_pre_decoder.c</in>
+                  <in>ble_opt_set.c</in>
+                  <in>ble_tx_buffer_count_get.c</in>
+                  <in>ble_uuid_decode.c</in>
+                  <in>ble_uuid_encode.c</in>
+                  <in>ble_uuid_vs_add.c</in>
+                  <in>ble_version_get.c</in>
+                  <in>power_system_off.c</in>
+                  <in>temp_get.c</in>
+                </df>
+              </df>
+            </df>
+            <df name="hal">
+              <in>dtm_uart.c</in>
+              <in>ser_phy_nrf51_spi_5W_slave.c</in>
+              <in>ser_phy_nrf51_spi_slave.c</in>
+              <in>ser_phy_nrf51_uart_stm_conn.c</in>
+            </df>
+            <in>app_scheduler.c</in>
+            <in>ser_conn_cmd_decoder.c</in>
+            <in>ser_conn_dtm_cmd_decoder.c</in>
+            <in>ser_conn_error_handling.c</in>
+            <in>ser_conn_event_encoder.c</in>
+            <in>ser_conn_handlers.c</in>
+            <in>ser_conn_pkt_decoder.c</in>
+          </df>
+        </df>
+        <df name="simple_uart">
+          <in>simple_uart.c</in>
+        </df>
+        <df name="spi_master">
+          <in>spi_master.c</in>
+        </df>
+        <df name="spi_slave">
+          <in>spi_slave.c</in>
+        </df>
+        <df name="templates">
+          <in>system_nrf51.c</in>
+        </df>
+        <df name="twi_master">
+          <in>twi_hw_master.c</in>
+          <in>twi_sw_master.c</in>
+        </df>
+      </df>
+      <in>main.c</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="Include/RTT/SEGGER_RTT.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Include/RTT/SEGGER_RTT_printf.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Include/Syscalls/RTT_Syscalls_GCC.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Include/Syscalls/RTT_Syscalls_IAR.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Include/Syscalls/RTT_Syscalls_KEIL.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="RTE/Device/nRF51822_xxAA/system_nrf51.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="RTE/Device/nRF51822_xxAB/system_nrf51.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/app_common/app_button.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/app_fifo.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/app_gpiote.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/app_scheduler.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/app_timer.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/app_trace.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/app_uart.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/app_uart_fifo.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/crc16.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/hci_mem_pool.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/hci_slip.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/hci_transport.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/app_common/pstorage.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_advdata.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_advdata_parser.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_conn_params.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_db_discovery.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_debug_assert_handler.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ble/ble_dtm.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_error_log.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_flash.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_racp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_radio_notification.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ble/ble_sensorsim.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_ans_c.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_bas.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_bas_c.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_bps.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_cis.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_cscs.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_dfu.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_dis.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_gls.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_gls_db.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_hids.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_hrs.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_hrs_c.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_hts.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_ias.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_ias_c.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_lls.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_rscs.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_sc_ctrlpt.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_srv_common.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ble/ble_services/ble_tps.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ble/device_manager/device_manager_central.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ble/device_manager/device_manager_peripheral.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/bootloader_dfu/bootloader.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/bootloader_dfu/bootloader_settings_arm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/bootloader_dfu/bootloader_util_arm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/bootloader_dfu/bootloader_util_gcc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/bootloader_dfu/dfu_app_handler.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/bootloader_dfu/dfu_dual_bank.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/bootloader_dfu/dfu_single_bank.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/bootloader_dfu/dfu_transport_ble.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/bootloader_dfu/dfu_transport_serial.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/console/console.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ext_sensors/adns2080/adns2080.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ext_sensors/cherry8x16/cherry8x16.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ext_sensors/ds1624/ds1624.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ext_sensors/mpu6050/mpu6050.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ext_sensors/nrf6350/nrf6350.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/ext_sensors/sdio/sdio.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/ext_sensors/synaptics_touchpad/synaptics_touchpad.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/gzp/nrf_gzp.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/gzp/nrf_gzp_device.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/gzp/nrf_gzp_host.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/gzp/nrf_gzp_host_nrf51.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/nrf_assert/nrf_assert.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/nrf_delay/nrf_delay.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/nrf_ecb/nrf_ecb.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/nrf_nvmc/nrf_nvmc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/sd_common/softdevice_handler.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/sdk_soc/nrf_soc.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/common/ble_dtm_app.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/common/ble_dtm_init.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/middleware/app_mw_ble.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/middleware/app_mw_ble_gap.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/middleware/app_mw_ble_gattc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/middleware/app_mw_ble_gatts.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/middleware/app_mw_ble_l2cap.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/middleware/app_mw_nrf_soc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_enable.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_event.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_evt_tx_complete.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_address_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_address_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_adv_data_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_adv_start.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_adv_stop.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_appearance_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_appearance_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_auth_key_reply.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_authenticate.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_conn_param_update.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_conn_sec_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_device_name_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_device_name_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_disconnect.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_evt_auth_key_request.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_evt_auth_status.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_evt_conn_param_update.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_evt_conn_sec_update.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_evt_connected.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_evt_disconnected.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_evt_passkey_display.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_evt_rssi_changed.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_evt_sec_info_request.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_evt_sec_params_request.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_evt_timeout.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_ppcp_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_ppcp_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_rssi_start.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_rssi_stop.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_sec_info_reply.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_sec_params_reply.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gap_tx_power_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_char_value_by_uuid_read.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_char_values_read.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_characteristics_discover.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_descriptors_discover.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_evt_char_disc_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_evt_char_val_by_uuid_read_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_evt_char_vals_read_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_evt_desc_disc_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_evt_hvx.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_evt_prim_srvc_disc_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_evt_read_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_evt_rel_disc_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_evt_timeout.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_evt_write_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_hv_confirm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_primary_services_discover.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_read.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_relationships_discover.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gattc_write.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_characteristic_add.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_descriptor_add.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_evt_hvc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_evt_rw_authorize_request.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_evt_sc_confirm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_evt_sys_attr_missing.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_evt_timeout.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_evt_write.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_hvx.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_include_add.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_rw_authorize_reply.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_service_add.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_service_changed.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_sys_attr_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_sys_attr_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_value_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_gatts_value_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_l2cap_cid_register.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_l2cap_cid_unregister.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_l2cap_evt_rx.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_l2cap_tx.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_opt_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_opt_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_tx_buffer_count_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_uuid_decode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_uuid_encode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_uuid_vs_add.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/ble_version_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/power_system_off.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/codecs/s110/serializers/temp_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/hal/app_gpiote_fast_detect.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/hal/app_util_platform.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/hal/pstorage.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/hal/ser_app_hal_nrf51.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/hal/ser_app_power_system_off.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/hal/ser_phy_nrf51_spi_5W_master.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/hal/ser_phy_nrf51_spi_master.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/hal/ser_phy_nrf51_uart_stm_app.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/hal/spi_5W_master.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/transport/app_mailbox.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/transport/ser_sd_transport.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/application/transport/ser_softdevice_handler.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/ble_serialization.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/cond_field_serialization.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/struct_ser/s110/ble_gap_struct_serialization.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/struct_ser/s110/ble_gattc_struct_serialization.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/struct_ser/s110/ble_gatts_struct_serialization.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/struct_ser/s110/ble_struct_serialization.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/transport/debug/debug_hci_nrf6310.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/transport/ser_hal_transport.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/transport/ser_phy.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/transport/ser_phy_hci.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/transport/ser_phy_hci_slip.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/transport/ser_phy_nohci.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/common/transport/ser_phy_nrf51_uart.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/app_scheduler.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/common/ble_dtm_init.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/common/conn_mw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/middleware/conn_mw_ble.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/middleware/conn_mw_ble_gap.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/middleware/conn_mw_ble_gattc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/middleware/conn_mw_ble_gatts.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/middleware/conn_mw_ble_l2cap.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/middleware/conn_mw_items.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/middleware/conn_mw_nrf_soc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_enable.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_event.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_evt_tx_complete.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_address_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_address_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_adv_data_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_adv_start.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_adv_stop.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_appearance_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_appearance_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_auth_key_reply.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_authenticate.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_conn_param_update.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_conn_sec_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_device_name_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_device_name_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_disconnect.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_evt_auth_key_request.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_evt_auth_status.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_evt_conn_param_update.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_evt_conn_sec_update.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_evt_connected.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_evt_disconnected.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_evt_passkey_display.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_evt_rssi_changed.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_evt_sec_info_request.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_evt_sec_params_request.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_evt_timeout.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_ppcp_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_ppcp_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_rssi_start.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_rssi_stop.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_sec_info_reply.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_sec_params_reply.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gap_tx_power_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_char_value_by_uuid_read.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_char_values_read.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_characteristics_discover.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_descriptors_discover.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_evt_char_disc_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_evt_char_val_by_uuid_read_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_evt_char_vals_read_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_evt_desc_disc_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_evt_hvx.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_evt_prim_srvc_disc_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_evt_read_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_evt_rel_disc_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_evt_timeout.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_evt_write_rsp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_hv_confirm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_primary_services_discover.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_read.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_relationships_discover.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gattc_write.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_characteristic_add.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_descriptor_add.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_evt_hvc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_evt_rw_authorize_request.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_evt_sc_confirm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_evt_sys_attr_missing.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_evt_timeout.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_evt_write.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_hvx.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_include_add.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_rw_authorize_reply.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_service_add.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_service_changed.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_sys_attr_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_sys_attr_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_value_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_gatts_value_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_l2cap_cid_register.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_l2cap_cid_unregister.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_l2cap_evt_rx.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_l2cap_tx.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_opt_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_opt_id_pre_decoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_opt_set.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_tx_buffer_count_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_uuid_decode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_uuid_encode.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_uuid_vs_add.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/ble_version_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/power_system_off.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/codecs/s110/serializers/temp_get.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/hal/dtm_uart.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/hal/ser_phy_nrf51_spi_5W_slave.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/hal/ser_phy_nrf51_spi_slave.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/hal/ser_phy_nrf51_uart_stm_conn.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/ser_conn_cmd_decoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/ser_conn_dtm_cmd_decoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/ser_conn_error_handling.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/ser_conn_event_encoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/ser_conn_handlers.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/serialization/connectivity/ser_conn_pkt_decoder.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="Source/simple_uart/simple_uart.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/spi_master/spi_master.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/spi_slave/spi_slave.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/templates/system_nrf51.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/twi_master/twi_hw_master.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="Source/twi_master/twi_sw_master.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="2">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

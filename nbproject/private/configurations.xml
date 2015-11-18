@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="_build">
+      </df>
+      <df name="Include">
+        <df name="app_common">
+          <in>app_button.h</in>
+          <in>app_error.h</in>
+          <in>app_fifo.h</in>
+          <in>app_gpiote.h</in>
+          <in>app_scheduler.h</in>
+          <in>app_timer.h</in>
+          <in>app_trace.h</in>
+          <in>app_uart.h</in>
+          <in>app_util.h</in>
+          <in>crc16.h</in>
+          <in>hal_transport.h</in>
+          <in>hci_mem_pool.h</in>
+          <in>hci_mem_pool_internal.h</in>
+          <in>hci_slip.h</in>
+          <in>hci_transport.h</in>
+          <in>pstorage.h</in>
+          <in>pstorage_platform.h</in>
+        </df>
+        <df name="ble">
+          <df name="ble_services">
+            <in>ble_ans_c.h</in>
+            <in>ble_bas.h</in>
+            <in>ble_bas_c.h</in>
+            <in>ble_bps.h</in>
+            <in>ble_cis.h</in>
+            <in>ble_cscs.h</in>
+            <in>ble_dfu.h</in>
+            <in>ble_dis.h</in>
+            <in>ble_gls.h</in>
+            <in>ble_gls_db.h</in>
+            <in>ble_hids.h</in>
+            <in>ble_hrs.h</in>
+            <in>ble_hrs_c.h</in>
+            <in>ble_hts.h</in>
+            <in>ble_ias.h</in>
+            <in>ble_ias_c.h</in>
+            <in>ble_lls.h</in>
+            <in>ble_rscs.h</in>
+            <in>ble_sc_ctrlpt.h</in>
+            <in>ble_sensor_location.h</in>
+            <in>ble_srv_common.h</in>
+            <in>ble_tps.h</in>
+          </df>
+          <df name="device_manager">
+            <in>device_manager.h</in>
+            <in>device_manager_cnfg.h</in>
+          </df>
+          <in>ble_advdata.h</in>
+          <in>ble_advdata_parser.h</in>
+          <in>ble_central_bondmngr.h</in>
+          <in>ble_conn_params.h</in>
+          <in>ble_date_time.h</in>
+          <in>ble_db_discovery.h</in>
+          <in>ble_debug_assert_handler.h</in>
+          <in>ble_dtm.h</in>
+          <in>ble_error_log.h</in>
+          <in>ble_flash.h</in>
+          <in>ble_racp.h</in>
+          <in>ble_radio_notification.h</in>
+          <in>ble_sensorsim.h</in>
+        </df>
+        <df name="boards">
+          <in>nrf6310.h</in>
+          <in>pca10000.h</in>
+          <in>pca10001.h</in>
+          <in>pca10003.h</in>
+        </df>
+        <df name="bootloader_dfu">
+          <df name="ble_transport">
+            <in>hci_mem_pool_internal.h</in>
+          </df>
+          <df name="hci_transport">
+            <in>hci_mem_pool_internal.h</in>
+            <in>hci_transport_config.h</in>
+          </df>
+          <in>bootloader.h</in>
+          <in>bootloader_settings.h</in>
+          <in>bootloader_types.h</in>
+          <in>bootloader_util.h</in>
+          <in>dfu.h</in>
+          <in>dfu_app_handler.h</in>
+          <in>dfu_bank_internal.h</in>
+          <in>dfu_transport.h</in>
+          <in>dfu_types.h</in>
+        </df>
+        <df name="esb">
+          <in>nrf_esb.h</in>
+          <in>nrf_esb_constants.h</in>
+        </df>
+        <df name="ext_sensors">
+          <in>adns2080.h</in>
+          <in>cherry8x16.h</in>
+          <in>ds1624.h</in>
+          <in>mpu6050.h</in>
+          <in>nrf6350.h</in>
+          <in>sdio.h</in>
+          <in>synaptics_touchpad.h</in>
+        </df>
+        <df name="gcc">
+          <in>core_cm0.h</in>
+          <in>core_cmFunc.h</in>
+          <in>core_cmInstr.h</in>
+        </df>
+        <df name="gzll">
+          <in>nrf_gzll.h</in>
+          <in>nrf_gzll_constants.h</in>
+        </df>
+        <df name="gzp">
+          <in>nrf_gzp.h</in>
+        </df>
+        <df name="RTT">
+          <in>SEGGER_RTT.c</in>
+          <in>SEGGER_RTT.h</in>
+          <in>SEGGER_RTT_Conf.h</in>
+          <in>SEGGER_RTT_printf.c</in>
+        </df>
+        <df name="s110">
+          <in>ble.h</in>
+          <in>ble_err.h</in>
+          <in>ble_gap.h</in>
+          <in>ble_gatt.h</in>
+          <in>ble_gattc.h</in>
+          <in>ble_gatts.h</in>
+          <in>ble_hci.h</in>
+          <in>ble_l2cap.h</in>
+          <in>ble_ranges.h</in>
+          <in>ble_types.h</in>
+          <in>nrf_error.h</in>
+          <in>nrf_error_sdm.h</in>
+          <in>nrf_error_soc.h</in>
+          <in>nrf_mbr.h</in>
+          <in>nrf_sdm.h</in>
+          <in>nrf_soc.h</in>
+          <in>nrf_svc.h</in>
+          <in>softdevice_assert.h</in>
+        </df>
+        <df name="s120">
+          <in>ble.h</in>
+          <in>ble_err.h</in>
+          <in>ble_gap.h</in>
+          <in>ble_gatt.h</in>
+          <in>ble_gattc.h</in>
+          <in>ble_gatts.h</in>
+          <in>ble_hci.h</in>
+          <in>ble_l2cap.h</in>
+          <in>ble_ranges.h</in>
+          <in>ble_types.h</in>
+          <in>nrf_error.h</in>
+          <in>nrf_error_sdm.h</in>
+          <in>nrf_error_soc.h</in>
+          <in>nrf_sdm.h</in>
+          <in>nrf_soc.h</in>
+          <in>nrf_svc.h</in>
+          <in>softdevice_assert.h</in>
+        </df>
+        <df name="sd_common">
+          <in>ant_stack_handler_types.h</in>
+          <in>app_util_platform.h</in>
+          <in>ble_stack_handler_types.h</in>
+          <in>softdevice_handler.h</in>
+        </df>
+        <df name="sdk">
+          <in>sdk_common.h</in>
+          <in>sdk_errors.h</in>
+          <in>sdk_os.h</in>
+        </df>
+        <df name="sdk_soc">
+          <in>app_util_platform.h</in>
+          <in>nrf_error.h</in>
+          <in>nrf_soc.h</in>
+        </df>
+        <df name="serialization">
+          <df name="application">
+            <df name="codecs">
+              <df name="common">
+                <in>ble_dtm_app.h</in>
+              </df>
+              <df name="s110">
+                <df name="serializers">
+                  <in>ble_app.h</in>
+                  <in>ble_evt_app.h</in>
+                  <in>ble_gap_app.h</in>
+                  <in>ble_gap_evt_app.h</in>
+                  <in>ble_gattc_app.h</in>
+                  <in>ble_gattc_evt_app.h</in>
+                  <in>ble_gatts_app.h</in>
+                  <in>ble_gatts_evt_app.h</in>
+                  <in>ble_l2cap_app.h</in>
+                  <in>ble_l2cap_evt_app.h</in>
+                  <in>nrf_soc_app.h</in>
+                </df>
+              </df>
+            </df>
+            <df name="transport">
+              <in>app_mailbox.h</in>
+              <in>ser_app_hal.h</in>
+              <in>ser_app_power_system_off.h</in>
+              <in>ser_phy_config_app_nrf51.h</in>
+              <in>ser_phy_debug_app.h</in>
+              <in>ser_sd_transport.h</in>
+              <in>spi_5W_master.h</in>
+            </df>
+          </df>
+          <df name="common">
+            <df name="struct_ser">
+              <df name="s110">
+                <in>ble_gap_struct_serialization.h</in>
+                <in>ble_gattc_struct_serialization.h</in>
+                <in>ble_gatts_struct_serialization.h</in>
+                <in>ble_struct_serialization.h</in>
+              </df>
+            </df>
+            <df name="transport">
+              <in>dtm_uart_params.h</in>
+              <in>ser_hal_transport.h</in>
+              <in>ser_phy.h</in>
+              <in>ser_phy_debug_comm.h</in>
+              <in>ser_phy_hci.h</in>
+            </df>
+            <in>ble_serialization.h</in>
+            <in>cond_field_serialization.h</in>
+            <in>ser_config.h</in>
+          </df>
+          <df name="connectivity">
+            <df name="codecs">
+              <df name="common">
+                <in>ble_dtm_conn.h</in>
+              </df>
+              <df name="s110">
+                <df name="middleware">
+                  <in>conn_mw.h</in>
+                  <in>conn_mw_ble.h</in>
+                  <in>conn_mw_ble_gap.h</in>
+                  <in>conn_mw_ble_gattc.h</in>
+                  <in>conn_mw_ble_gatts.h</in>
+                  <in>conn_mw_ble_l2cap.h</in>
+                  <in>conn_mw_nrf_soc.h</in>
+                </df>
+                <df name="serializers">
+                  <in>ble_conn.h</in>
+                  <in>ble_evt_conn.h</in>
+                  <in>ble_gap_conn.h</in>
+                  <in>ble_gap_evt_conn.h</in>
+                  <in>ble_gattc_conn.h</in>
+                  <in>ble_gattc_evt_conn.h</in>
+                  <in>ble_gatts_conn.h</in>
+                  <in>ble_gatts_evt_conn.h</in>
+                  <in>ble_l2cap_conn.h</in>
+                  <in>ble_l2cap_evt_conn.h</in>
+                  <in>nrf_soc_conn.h</in>
+                </df>
+              </df>
+            </df>
+            <df name="transport">
+              <in>dtm_uart.h</in>
+              <in>ser_phy_config_conn_nrf51.h</in>
+              <in>ser_phy_debug_conn.h</in>
+            </df>
+            <in>app_scheduler.h</in>
+            <in>pstorage_platform.h</in>
+            <in>ser_conn_cmd_decoder.h</in>
+            <in>ser_conn_dtm_cmd_decoder.h</in>
+            <in>ser_conn_event_encoder.h</in>
+            <in>ser_conn_handlers.h</in>
+            <in>ser_conn_pkt_decoder.h</in>
+          </df>
+        </df>
+        <df name="Syscalls">
+          <in>RTT_Syscalls_GCC.c</in>
+          <in>RTT_Syscalls_IAR.c</in>
+          <in>RTT_Syscalls_KEIL.c</in>
+        </df>
+        <in>boards.h</in>
+        <in>common.h</in>
+        <in>compiler_abstraction.h</in>
+        <in>console.h</in>
+        <in>nordic_common.h</in>
+        <in>nrf.h</in>
+        <in>nrf51.h</in>
+        <in>nrf51_bitfields.h</in>
+        <in>nrf51_deprecated.h</in>
+        <in>nrf_assert.h</in>
+        <in>nrf_delay.h</in>
+        <in>nrf_ecb.h</in>
+        <in>nrf_gpio.h</in>
+        <in>nrf_gpiote.h</in>
+        <in>nrf_nvmc.h</in>
+        <in>nrf_temp.h</in>
+        <in>simple_uart.h</in>
+        <in>spi_master.h</in>
+        <in>spi_slave.h</in>
+        <in>system_nrf51.h</in>
+        <in>twi_master.h</in>
+      </df>
+      <df name="Lib">
+        <df name="esb">
+          <df name="arm">
+          </df>
+          <df name="gcc">
+          </df>
+        </df>
+        <df name="gzll">
+          <df name="arm">
+          </df>
+          <df name="gcc">
+          </df>
+        </df>
+      </df>
+      <df name="RTE">
+        <df name="Device">
+          <df name="nRF51822_xxAA">
+            <in>arm_startup_nrf51.s</in>
+            <in>system_nrf51.c</in>
+          </df>
+          <df name="nRF51822_xxAB">
+            <in>arm_startup_nrf51.s</in>
+            <in>system_nrf51.c</in>
+          </df>
+        </df>
+        <in>RTE_Components.h</in>
+      </df>
+      <df name="Source">
+        <df name="app_common">
+          <in>app_button.c</in>
+          <in>app_fifo.c</in>
+          <in>app_gpiote.c</in>
+          <in>app_scheduler.c</in>
+          <in>app_timer.c</in>
+          <in>app_trace.c</in>
+          <in>app_uart.c</in>
+          <in>app_uart_fifo.c</in>
+          <in>crc16.c</in>
+          <in>hci_mem_pool.c</in>
+          <in>hci_slip.c</in>
+          <in>hci_transport.c</in>
+          <in>pstorage.c</in>
+        </df>
+        <df name="ble">
+          <df name="ble_services">
+            <df name="_build">
+            </df>
+            <in>ble_ans_c.c</in>
+            <in>ble_bas.c</in>
+            <in>ble_bas_c.c</in>
+            <in>ble_bps.c</in>
+            <in>ble_cis.c</in>
+            <in>ble_cscs.c</in>
+            <in>ble_dfu.c</in>
+            <in>ble_dis.c</in>
+            <in>ble_gls.c</in>
+            <in>ble_gls_db.c</in>
+            <in>ble_hids.c</in>
+            <in>ble_hrs.c</in>
+            <in>ble_hrs_c.c</in>
+            <in>ble_hts.c</in>
+            <in>ble_ias.c</in>
+            <in>ble_ias_c.c</in>
+            <in>ble_lls.c</in>
+            <in>ble_rscs.c</in>
+            <in>ble_sc_ctrlpt.c</in>
+            <in>ble_srv_common.c</in>
+            <in>ble_tps.c</in>
+          </df>
+          <df name="device_manager">
+            <in>device_manager_central.c</in>
+            <in>device_manager_peripheral.c</in>
+          </df>
+          <in>ble_advdata.c</in>
+          <in>ble_advdata_parser.c</in>
+          <in>ble_conn_params.c</in>
+          <in>ble_db_discovery.c</in>
+          <in>ble_debug_assert_handler.c</in>
+          <in>ble_dtm.c</in>
+          <in>ble_error_log.c</in>
+          <in>ble_flash.c</in>
+          <in>ble_racp.c</in>
+          <in>ble_radio_notification.c</in>
+          <in>ble_sensorsim.c</in>
+        </df>
+        <df name="bootloader_dfu">
+          <in>bootloader.c</in>
+          <in>bootloader_settings_arm.c</in>
+          <in>bootloader_util_arm.c</in>
+          <in>bootloader_util_gcc.c</in>
+          <in>dfu_app_handler.c</in>
+          <in>dfu_dual_bank.c</in>
+          <in>dfu_single_bank.c</in>
+          <in>dfu_transport_ble.c</in>
+          <in>dfu_transport_serial.c</in>
+        </df>
+        <df name="console">
+          <in>console.c</in>
+        </df>
+        <df name="ext_sensors">
+          <df name="adns2080">
+            <in>adns2080.c</in>
+          </df>
+          <df name="cherry8x16">
+            <in>cherry8x16.c</in>
+          </df>
+          <df name="ds1624">
+            <in>ds1624.c</in>
+          </df>
+          <df name="mpu6050">
+            <in>mpu6050.c</in>
+          </df>
+          <df name="nrf6350">
+            <in>nrf6350.c</in>
+          </df>
+          <df name="sdio">
+            <in>sdio.c</in>
+          </df>
+          <df name="synaptics_touchpad">
+            <in>synaptics_touchpad.c</in>
+          </df>
+        </df>
+        <df name="gzp">
+          <in>nrf_gzp.c</in>
+          <in>nrf_gzp_device.c</in>
+          <in>nrf_gzp_host.c</in>
+          <in>nrf_gzp_host_nrf51.c</in>
+        </df>
+        <df name="nrf_assert">
+          <in>nrf_assert.c</in>
+        </df>
+        <df name="nrf_delay">
+          <in>nrf_delay.c</in>
+        </df>
+        <df name="nrf_ecb">
+          <in>nrf_ecb.c</in>
+        </df>
+        <df name="nrf_nvmc">
+          <in>nrf_nvmc.c</in>
+        </df>
+        <df name="sd_common">
+          <in>softdevice_handler.c</in>
+        </df>
+        <df name="sdk_soc">
+          <in>nrf_soc.c</in>
+        </df>
+        <df name="serialization">
+          <df name="application">
+            <df name="codecs">
+              <df name="common">
+                <in>ble_dtm_app.c</in>
+                <in>ble_dtm_init.c</in>
+              </df>
+              <df name="s110">
+                <df name="middleware">
+                  <in>app_mw_ble.c</in>
+                  <in>app_mw_ble_gap.c</in>
+                  <in>app_mw_ble_gattc.c</in>
+                  <in>app_mw_ble_gatts.c</in>
+                  <in>app_mw_ble_l2cap.c</in>
+                  <in>app_mw_nrf_soc.c</in>
+                </df>
+                <df name="serializers">
+                  <in>ble_enable.c</in>
+                  <in>ble_event.c</in>
+                  <in>ble_evt_tx_complete.c</in>
+                  <in>ble_gap_address_get.c</in>
+                  <in>ble_gap_address_set.c</in>
+                  <in>ble_gap_adv_data_set.c</in>
+                  <in>ble_gap_adv_start.c</in>
+                  <in>ble_gap_adv_stop.c</in>
+                  <in>ble_gap_appearance_get.c</in>
+                  <in>ble_gap_appearance_set.c</in>
+                  <in>ble_gap_auth_key_reply.c</in>
+                  <in>ble_gap_authenticate.c</in>
+                  <in>ble_gap_conn_param_update.c</in>
+                  <in>ble_gap_conn_sec_get.c</in>
+                  <in>ble_gap_device_name_get.c</in>
+                  <in>ble_gap_device_name_set.c</in>
+                  <in>ble_gap_disconnect.c</in>
+                  <in>ble_gap_evt_auth_key_request.c</in>
+                  <in>ble_gap_evt_auth_status.c</in>
+                  <in>ble_gap_evt_conn_param_update.c</in>
+                  <in>ble_gap_evt_conn_sec_update.c</in>
+                  <in>ble_gap_evt_connected.c</in>
+                  <in>ble_gap_evt_disconnected.c</in>
+                  <in>ble_gap_evt_passkey_display.c</in>
+                  <in>ble_gap_evt_rssi_changed.c</in>
+                  <in>ble_gap_evt_sec_info_request.c</in>
+                  <in>ble_gap_evt_sec_params_request.c</in>
+                  <in>ble_gap_evt_timeout.c</in>
+                  <in>ble_gap_ppcp_get.c</in>
+                  <in>ble_gap_ppcp_set.c</in>
+                  <in>ble_gap_rssi_start.c</in>
+                  <in>ble_gap_rssi_stop.c</in>
+                  <in>ble_gap_sec_info_reply.c</in>
+                  <in>ble_gap_sec_params_reply.c</in>
+                  <in>ble_gap_tx_power_set.c</in>
+                  <in>ble_gattc_char_value_by_uuid_read.c</in>
+                  <in>ble_gattc_char_values_read.c</in>
+                  <in>ble_gattc_characteristics_discover.c</in>
+                  <in>ble_gattc_descriptors_discover.c</in>
+                  <in>ble_gattc_evt_char_disc_rsp.c</in>
+                  <in>ble_gattc_evt_char_val_by_uuid_read_rsp.c</in>
+                  <in>ble_gattc_evt_char_vals_read_rsp.c</in>
+                  <in>ble_gattc_evt_desc_disc_rsp.c</in>
+                  <in>ble_gattc_evt_hvx.c</in>
+                  <in>ble_gattc_evt_prim_srvc_disc_rsp.c</in>
+                  <in>ble_gattc_evt_read_rsp.c</in>
+                  <in>ble_gattc_evt_rel_disc_rsp.c</in>
+                  <in>ble_gattc_evt_timeout.c</in>
+                  <in>ble_gattc_evt_write_rsp.c</in>
+                  <in>ble_gattc_hv_confirm.c</in>
+                  <in>ble_gattc_primary_services_discover.c</in>
+                  <in>ble_gattc_read.c</in>
+                  <in>ble_gattc_relationships_discover.c</in>
+                  <in>ble_gattc_write.c</in>
+                  <in>ble_gatts_characteristic_add.c</in>
+                  <in>ble_gatts_descriptor_add.c</in>
+                  <in>ble_gatts_evt_hvc.c</in>
+                  <in>ble_gatts_evt_rw_authorize_request.c</in>
+                  <in>ble_gatts_evt_sc_confirm.c</in>
+                  <in>ble_gatts_evt_sys_attr_missing.c</in>
+                  <in>ble_gatts_evt_timeout.c</in>
+                  <in>ble_gatts_evt_write.c</in>
+                  <in>ble_gatts_hvx.c</in>
+                  <in>ble_gatts_include_add.c</in>
+                  <in>ble_gatts_rw_authorize_reply.c</in>
+                  <in>ble_gatts_service_add.c</in>
+                  <in>ble_gatts_service_changed.c</in>
+                  <in>ble_gatts_sys_attr_get.c</in>
+                  <in>ble_gatts_sys_attr_set.c</in>
+                  <in>ble_gatts_value_get.c</in>
+                  <in>ble_gatts_value_set.c</in>
+                  <in>ble_l2cap_cid_register.c</in>
+                  <in>ble_l2cap_cid_unregister.c</in>
+                  <in>ble_l2cap_evt_rx.c</in>
+                  <in>ble_l2cap_tx.c</in>
+                  <in>ble_opt_get.c</in>
+                  <in>ble_opt_set.c</in>
+                  <in>ble_tx_buffer_count_get.c</in>
+                  <in>ble_uuid_decode.c</in>
+                  <in>ble_uuid_encode.c</in>
+                  <in>ble_uuid_vs_add.c</in>
+                  <in>ble_version_get.c</in>
+                  <in>power_system_off.c</in>
+                  <in>temp_get.c</in>
+                </df>
+              </df>
+            </df>
+            <df name="hal">
+              <in>app_gpiote_fast_detect.c</in>
+              <in>app_util_platform.c</in>
+              <in>arm_startup_nrf51.s</in>
+              <in>pstorage.c</in>
+              <in>ser_app_hal_nrf51.c</in>
+              <in>ser_app_power_system_off.c</in>
+              <in>ser_config_5W_app.h</in>
+              <in>ser_phy_nrf51_spi_5W_master.c</in>
+              <in>ser_phy_nrf51_spi_master.c</in>
+              <in>ser_phy_nrf51_uart_stm_app.c</in>
+              <in>spi_5W_master.c</in>
+            </df>
+            <df name="transport">
+              <in>app_mailbox.c</in>
+              <in>ser_sd_transport.c</in>
+              <in>ser_softdevice_handler.c</in>
+            </df>
+          </df>
+          <df name="common">
+            <df name="struct_ser">
+              <df name="s110">
+                <in>ble_gap_struct_serialization.c</in>
+                <in>ble_gattc_struct_serialization.c</in>
+                <in>ble_gatts_struct_serialization.c</in>
+                <in>ble_struct_serialization.c</in>
+              </df>
+            </df>
+            <df name="transport">
+              <df name="debug">
+                <in>debug_hci_config_nrf6310.h</in>
+                <in>debug_hci_nrf6310.c</in>
+              </df>
+              <in>ser_hal_transport.c</in>
+              <in>ser_phy.c</in>
+              <in>ser_phy_hci.c</in>
+              <in>ser_phy_hci_slip.c</in>
+              <in>ser_phy_nohci.c</in>
+              <in>ser_phy_nrf51_uart.c</in>
+            </df>
+            <in>ble_serialization.c</in>
+            <in>cond_field_serialization.c</in>
+          </df>
+          <df name="connectivity">
+            <df name="codecs">
+              <df name="common">
+                <in>ble_dtm_init.c</in>
+                <in>conn_mw.c</in>
+              </df>
+              <df name="s110">
+                <df name="middleware">
+                  <in>conn_mw_ble.c</in>
+                  <in>conn_mw_ble_gap.c</in>
+                  <in>conn_mw_ble_gattc.c</in>
+                  <in>conn_mw_ble_gatts.c</in>
+                  <in>conn_mw_ble_l2cap.c</in>
+                  <in>conn_mw_items.c</in>
+                  <in>conn_mw_nrf_soc.c</in>
+                </df>
+                <df name="serializers">
+                  <in>ble_enable.c</in>
+                  <in>ble_event.c</in>
+                  <in>ble_evt_tx_complete.c</in>
+                  <in>ble_gap_address_get.c</in>
+                  <in>ble_gap_address_set.c</in>
+                  <in>ble_gap_adv_data_set.c</in>
+                  <in>ble_gap_adv_start.c</in>
+                  <in>ble_gap_adv_stop.c</in>
+                  <in>ble_gap_appearance_get.c</in>
+                  <in>ble_gap_appearance_set.c</in>
+                  <in>ble_gap_auth_key_reply.c</in>
+                  <in>ble_gap_authenticate.c</in>
+                  <in>ble_gap_conn_param_update.c</in>
+                  <in>ble_gap_conn_sec_get.c</in>
+                  <in>ble_gap_device_name_get.c</in>
+                  <in>ble_gap_device_name_set.c</in>
+                  <in>ble_gap_disconnect.c</in>
+                  <in>ble_gap_evt_auth_key_request.c</in>
+                  <in>ble_gap_evt_auth_status.c</in>
+                  <in>ble_gap_evt_conn_param_update.c</in>
+                  <in>ble_gap_evt_conn_sec_update.c</in>
+                  <in>ble_gap_evt_connected.c</in>
+                  <in>ble_gap_evt_disconnected.c</in>
+                  <in>ble_gap_evt_passkey_display.c</in>
+                  <in>ble_gap_evt_rssi_changed.c</in>
+                  <in>ble_gap_evt_sec_info_request.c</in>
+                  <in>ble_gap_evt_sec_params_request.c</in>
+                  <in>ble_gap_evt_timeout.c</in>
+                  <in>ble_gap_ppcp_get.c</in>
+                  <in>ble_gap_ppcp_set.c</in>
+                  <in>ble_gap_rssi_start.c</in>
+                  <in>ble_gap_rssi_stop.c</in>
+                  <in>ble_gap_sec_info_reply.c</in>
+                  <in>ble_gap_sec_params_reply.c</in>
+                  <in>ble_gap_tx_power_set.c</in>
+                  <in>ble_gattc_char_value_by_uuid_read.c</in>
+                  <in>ble_gattc_char_values_read.c</in>
+                  <in>ble_gattc_characteristics_discover.c</in>
+                  <in>ble_gattc_descriptors_discover.c</in>
+                  <in>ble_gattc_evt_char_disc_rsp.c</in>
+                  <in>ble_gattc_evt_char_val_by_uuid_read_rsp.c</in>
+                  <in>ble_gattc_evt_char_vals_read_rsp.c</in>
+                  <in>ble_gattc_evt_desc_disc_rsp.c</in>
+                  <in>ble_gattc_evt_hvx.c</in>
+                  <in>ble_gattc_evt_prim_srvc_disc_rsp.c</in>
+                  <in>ble_gattc_evt_read_rsp.c</in>
+                  <in>ble_gattc_evt_rel_disc_rsp.c</in>
+                  <in>ble_gattc_evt_timeout.c</in>
+                  <in>ble_gattc_evt_write_rsp.c</in>
+                  <in>ble_gattc_hv_confirm.c</in>
+                  <in>ble_gattc_primary_services_discover.c</in>
+                  <in>ble_gattc_read.c</in>
+                  <in>ble_gattc_relationships_discover.c</in>
+                  <in>ble_gattc_write.c</in>
+                  <in>ble_gatts_characteristic_add.c</in>
+                  <in>ble_gatts_descriptor_add.c</in>
+                  <in>ble_gatts_evt_hvc.c</in>
+                  <in>ble_gatts_evt_rw_authorize_request.c</in>
+                  <in>ble_gatts_evt_sc_confirm.c</in>
+                  <in>ble_gatts_evt_sys_attr_missing.c</in>
+                  <in>ble_gatts_evt_timeout.c</in>
+                  <in>ble_gatts_evt_write.c</in>
+                  <in>ble_gatts_hvx.c</in>
+                  <in>ble_gatts_include_add.c</in>
+                  <in>ble_gatts_rw_authorize_reply.c</in>
+                  <in>ble_gatts_service_add.c</in>
+                  <in>ble_gatts_service_changed.c</in>
+                  <in>ble_gatts_sys_attr_get.c</in>
+                  <in>ble_gatts_sys_attr_set.c</in>
+                  <in>ble_gatts_value_get.c</in>
+                  <in>ble_gatts_value_set.c</in>
+                  <in>ble_l2cap_cid_register.c</in>
+                  <in>ble_l2cap_cid_unregister.c</in>
+                  <in>ble_l2cap_evt_rx.c</in>
+                  <in>ble_l2cap_tx.c</in>
+                  <in>ble_opt_get.c</in>
+                  <in>ble_opt_id_pre_decoder.c</in>
+                  <in>ble_opt_set.c</in>
+                  <in>ble_tx_buffer_count_get.c</in>
+                  <in>ble_uuid_decode.c</in>
+                  <in>ble_uuid_encode.c</in>
+                  <in>ble_uuid_vs_add.c</in>
+                  <in>ble_version_get.c</in>
+                  <in>power_system_off.c</in>
+                  <in>temp_get.c</in>
+                </df>
+              </df>
+            </df>
+            <df name="hal">
+              <in>dtm_uart.c</in>
+              <in>ser_phy_nrf51_spi_5W_slave.c</in>
+              <in>ser_phy_nrf51_spi_slave.c</in>
+              <in>ser_phy_nrf51_uart_stm_conn.c</in>
+            </df>
+            <df name="startup">
+              <df name="arm">
+                <in>arm_startup_nrf51.s</in>
+              </df>
+            </df>
+            <in>app_scheduler.c</in>
+            <in>ser_conn_cmd_decoder.c</in>
+            <in>ser_conn_dtm_cmd_decoder.c</in>
+            <in>ser_conn_error_handling.c</in>
+            <in>ser_conn_event_encoder.c</in>
+            <in>ser_conn_handlers.c</in>
+            <in>ser_conn_pkt_decoder.c</in>
+          </df>
+        </df>
+        <df name="simple_uart">
+          <in>simple_uart.c</in>
+        </df>
+        <df name="spi_master">
+          <in>spi_master.c</in>
+        </df>
+        <df name="spi_slave">
+          <in>spi_slave.c</in>
+        </df>
+        <df name="templates">
+          <df name="arm">
+            <in>arm_startup_nrf51.s</in>
+            <in>uicr_config.h</in>
+          </df>
+          <df name="gcc">
+            <in>gcc_startup_nrf51.s</in>
+          </df>
+          <df name="iar">
+            <in>iar_startup_nrf51.s</in>
+          </df>
+          <in>system_nrf51.c</in>
+        </df>
+        <df name="twi_master">
+          <in>twi_hw_master.c</in>
+          <in>twi_sw_master.c</in>
+        </df>
+      </df>
+      <df name="SVD">
+      </df>
+      <in>main.c</in>
+      <in>pstorage_platform.h</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

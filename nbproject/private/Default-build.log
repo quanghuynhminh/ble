@@ -1,0 +1,12 @@
+mkdir _build
+"/usr/local/gcc-arm-none-eabi-4_8-2014q1/bin/arm-none-eabi-gcc" -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -ffunction-sections -mcpu=cortex-m0 -mthumb -mabi=aapcs -DNRF51 -DBOARD_NRF10001 -DNRF51822_QFAA_CA --std=gnu99 -Wall -Werror -mfloat-abi=soft -DDEBUG -g3 -O0 -I"./Include/s110" -I"./Include/ble" -I"./Include/ble/ble_services" -I"./Include/app_common" -I"./Include/sd_common" -I"./Include/sdk" -I"../" -I"./Include" -I"./Include/gcc" -I"./Include/ext_sensors" -M main.c -MF "_build/main.d" -MT _build/main.o
+In file included from main.c:39:0:
+./Include/boards.h:24:2: error: #error "Board is not defined"
+ #error "Board is not defined"
+  ^
+In file included from main.c:47:0:
+./Include/app_common/pstorage.h:34:28: fatal error: SEGGER_RTT.h: No such file or directory
+     #include "SEGGER_RTT.h"
+                            ^
+compilation terminated.
+make: *** [_build/main.o] Error 1
