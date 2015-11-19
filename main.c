@@ -65,7 +65,7 @@
 #define DEVICE_NAME                     "Coffee"                           /**< Name of device. Will be included in the advertising data. */
 
 #define APP_ADV_INTERVAL                64                                          /**< The advertising interval (in units of 0.625 ms. This value corresponds to 40 ms). */
-#define APP_ADV_TIMEOUT_IN_SECONDS      180                                         /**< The advertising timeout (in units of seconds). */
+#define APP_ADV_TIMEOUT_IN_SECONDS      0                                           /**< The advertising timeout (in units of seconds). */
 
 #define APP_TIMER_PRESCALER             0                                           /**< Value of the RTC1 PRESCALER register. */
 #define APP_TIMER_MAX_TIMERS            8                                           /**< Maximum number of simultaneously created timers. */
@@ -179,7 +179,7 @@ void assert_nrf_callback(uint16_t line_num, const uint8_t * p_file_name)
  *
  * @details Set all base state of GPIO.
  */
-void control_gpio(uint32_t pin_no,uint8_t state,nrf_gpio_pin_pull_t pin_pull){
+void control_gpio(uint32_t pin_no,uint8_t state, nrf_gpio_pin_pull_t pin_pull){
     switch(state)
     {
         case ON:
