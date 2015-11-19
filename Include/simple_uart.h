@@ -17,6 +17,7 @@
 
 #include <stdbool.h>
 #include <stdint.h>
+#include "app_util_platform.h"
 
 /** @file
 * @brief Simple UART driver

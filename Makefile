@@ -18,6 +18,7 @@ C_SOURCE_FILES += app_timer.c
 C_SOURCE_FILES += app_scheduler.c
 C_SOURCE_FILES += app_button.c
 C_SOURCE_FILES += app_gpiote.c
+C_SOURCE_FILES += simple_uart.c
 C_SOURCE_FILES += SEGGER_RTT.c
 C_SOURCE_FILES += SEGGER_RTT_printf.c
 

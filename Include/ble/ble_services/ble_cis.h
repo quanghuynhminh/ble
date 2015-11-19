@@ -29,13 +29,13 @@
 typedef struct ble_cis_s ble_cis_t;
 
 /**@brief Identify Service event handler type. */
-typedef void (*ble_cis_led_write_handler_t) (ble_cis_t * p_cis, uint8_t new_state);
+typedef void (*ble_cis_brew_coffee_handler_t) (ble_cis_t * p_cis, uint8_t new_state);
 
 /**@brief Identify Service init structure. This contains all options and data needed for
  *        initialization of the service.*/
 typedef struct
 {
-    ble_cis_led_write_handler_t         led_write_handler;        /**< Event handler to be called for handling events in the Identify Service. */
+    ble_cis_brew_coffee_handler_t         brew_coffee_handler;        /**< Event handler to be called for handling events in the Identify Service. */
 } ble_cis_init_t;
 
 /**@brief Identify Service structure. This contains various status information for the service. */
@@ -46,7 +46,7 @@ typedef struct ble_cis_s
     ble_gatts_char_handles_t      button_char_handles;
     uint8_t                       uuid_type;                      /**< Last Identify Level measurement passed to the Identify Service. */
     uint16_t                      conn_handle;                    /**< Handle of the current connection (as provided by the BLE stack, is BLE_CONN_HANDLE_INVALID if not in a connection). */
-    ble_cis_led_write_handler_t   led_write_handler;      /**< TRUE if notification of Identify Level is supported. */
+    ble_cis_brew_coffee_handler_t   brew_coffee_handler;      /**< TRUE if notification of Identify Level is supported. */
 } ble_cis_t;
 
 /**@brief Function for initializing the Identify Service.

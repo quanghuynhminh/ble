@@ -47,6 +47,7 @@
 #include "pstorage.h"
 #include "ble_cis.h"
 #include "ble_gap.h"
+#include "simple_uart.h"
 
 #define IS_SRVC_CHANGED_CHARACT_PRESENT 0                                           /**< Include or not the service_changed characteristic. if not enabled, the server's database cannot be changed for the lifetime of the device*/
 
@@ -65,7 +66,7 @@
 #define DEVICE_NAME                     "Coffee"                           /**< Name of device. Will be included in the advertising data. */
 
 #define APP_ADV_INTERVAL                64                                          /**< The advertising interval (in units of 0.625 ms. This value corresponds to 40 ms). */
-#define APP_ADV_TIMEOUT_IN_SECONDS      0                                           /**< The advertising timeout (in units of seconds). */
+#define APP_ADV_TIMEOUT_IN_SECONDS      180                                         /**< The advertising timeout (in units of seconds). */
 
 #define APP_TIMER_PRESCALER             0                                           /**< Value of the RTC1 PRESCALER register. */
 #define APP_TIMER_MAX_TIMERS            8                                           /**< Maximum number of simultaneously created timers. */
@@ -93,7 +94,7 @@
 
 #define DEAD_BEEF                       0xDEADBEEF                                  /**< Value used as error code on stack dump, can be used to identify stack location on stack unwind. */
 
-#define COLLECT_DELAY                   APP_TIMER_TICKS(500, APP_TIMER_PRESCALER)
+#define COLLECT_DELAY                   APP_TIMER_TICKS(200, APP_TIMER_PRESCALER)
 
 static ble_gap_sec_params_t             m_sec_params;                               /**< Security requirements for this application. */
 static uint16_t                         m_conn_handle = BLE_CONN_HANDLE_INVALID;    /**< Handle of the current connection. */
@@ -114,11 +115,11 @@ static app_timer_id_t                   m_collect_7th_id;
 #define OUTPUT  3
 
 enum{
-    COLLECT_MENU = 0,
-    COLLECT_LARGE_COFFEE,
-    COLLECT_COFFEE,
-    COLLECT_ESPRESSO,
-    COLLECT_HOT_WATER,
+    COLLECT_MENU = 6,
+    COLLECT_LARGE_COFFEE = 2,
+    COLLECT_COFFEE =1,
+    COLLECT_ESPRESSO = 0,
+    COLLECT_HOT_WATER =3,
     COLLECT_POWDER_COFFEE,
     COLLECT_CAPPUCCINO,
 };
@@ -179,7 +180,7 @@ void assert_nrf_callback(uint16_t line_num, const uint8_t * p_file_name)
  *
  * @details Set all base state of GPIO.
  */
-void control_gpio(uint32_t pin_no,uint8_t state, nrf_gpio_pin_pull_t pin_pull){
+void control_gpio(uint32_t pin_no,uint8_t state,nrf_gpio_pin_pull_t pin_pull){
     switch(state)
     {
         case ON:
@@ -409,54 +410,56 @@ static void advertising_init(void)
     err_code = ble_advdata_set(&advdata, &scanrsp);
     APP_ERROR_CHECK(err_code);
 }
-/**@brief Function for handler operation when received data from devices.
- *
- * @details Control LED and start time out.
- */
-static void led_write_handler(ble_cis_t * p_cis, uint8_t led_state)
-{
-    debug(0,"Led write handler, data received is %2d \n\r",led_state);
-    switch(led_state)
+void handler_select(uint8_t state){
+    switch(state)
     {
         case COLLECT_MENU:
             control_gpio(MENU,ON,0);
             app_timer_start(m_collect_1st_id,COLLECT_DELAY,NULL);
-            debug(0,"Select 1st \n\r");
+            debug(0,"Select MENU \n\r");
             break;
         case COLLECT_LARGE_COFFEE:
             control_gpio(LARGE_COFFEE,ON,0);
             app_timer_start(m_collect_2nd_id,COLLECT_DELAY,NULL);
-            debug(0,"Select 2nd \n\r");
+            debug(0,"Select LARGE_COFFEE \n\r");
             break;
         case COLLECT_COFFEE:
             control_gpio(COFFEE,ON,0);
             app_timer_start(m_collect_3rd_id,COLLECT_DELAY,NULL);
-            debug(0,"Select 3rd \n\r");
+            debug(0,"Select COFFEE \n\r");
             break; 
         case COLLECT_ESPRESSO:
             control_gpio(ESPRESSO,ON,0);
             app_timer_start(m_collect_4th_id,COLLECT_DELAY,NULL);
-            debug(0,"Select 4th \n\r");
+            debug(0,"Select ESPRESSO \n\r");
             break;
         case COLLECT_HOT_WATER:
             control_gpio(HOT_WATER,ON,0);
             app_timer_start(m_collect_5th_id,COLLECT_DELAY,NULL);
-            debug(0,"Select 5th \n\r");
+            debug(0,"Select HOT_WATER \n\r");
             break;
         case COLLECT_POWDER_COFFEE:
             control_gpio(POWDER_COFFEE,ON,0);
             app_timer_start(m_collect_6th_id,COLLECT_DELAY,NULL);
-            debug(0,"Select 6th \n\r");
+            debug(0,"Select POWDER_COFFEE \n\r");
             break;
          case COLLECT_CAPPUCCINO:
             control_gpio(CAPPUCCINO,ON,0);
             app_timer_start(m_collect_7th_id,COLLECT_DELAY,NULL);
-            debug(0,"Select 7th \n\r");
+            debug(0,"Select CAPPUCCINO \n\r");
             break;
         default:
-            debug(0,"Wrong state : %d",led_state);
+            debug(0,"Wrong state : %d",state);
             break;
     }
+}
+/**@brief Function for handler operation when received data from devices.
+ *
+ * @details Control LED and start time out.
+ */
+static void brew_coffee_handler(ble_cis_t * p_cis, uint8_t state)
+{
+    handler_select(state);
 }
 
 /**@brief Function for initializing services that will be used by the application.
@@ -466,7 +469,7 @@ static void services_init(void)
     uint32_t err_code;
     ble_cis_init_t init;
 	
-    init.led_write_handler = led_write_handler;
+    init.brew_coffee_handler = brew_coffee_handler;
     debug(0,"Initializing service... \n\r");
     err_code = ble_cis_init(&m_cis, &init);
     APP_ERROR_CHECK(err_code);
@@ -560,8 +563,6 @@ static void advertising_start(void)
     debug(0,"Start advertising \n\r");
     err_code = sd_ble_gap_adv_start(&adv_params);
     APP_ERROR_CHECK(err_code);
-    debug(0,"Off led 0 \n\r");
-    control_gpio(LED_0,ON,0);
 }
 
 
@@ -744,8 +745,33 @@ static void gpiote_init(void)
 {
     APP_GPIOTE_INIT(APP_GPIOTE_MAX_USERS);
 }
+static void uart_init(void)
+{
+    /**@snippet [UART Initialization] */
+    simple_uart_config(RTS_PIN_NUMBER, TX_PIN_NUMBER, CTS_PIN_NUMBER, RX_PIN_NUMBER, HWFC);
+    
+    NRF_UART0->INTENSET = UART_INTENSET_RXDRDY_Enabled << UART_INTENSET_RXDRDY_Pos;
+    
+    NVIC_SetPriority(UART0_IRQn, APP_IRQ_PRIORITY_LOW);
+    NVIC_EnableIRQ(UART0_IRQn);
+    /**@snippet [UART Initialization] */
+}
+/**@brief   Function for handling UART interrupts.
+ *
+ * @details This function will receive a single character from the UART and append it to a string.
+ *          The string will be be sent over BLE when the last character received was a 'new line'
+ *          i.e '\n' (hex 0x0D) or if the string has reached a length of @ref NUS_MAX_DATA_LENGTH.
+ */
+void UART0_IRQHandler(void)
+{
+    static uint8_t data;
+    /**@snippet [Handling the data received over UART] */
 
-
+    data = simple_uart_get();
+    
+    handler_select(data - 48);
+    /**@snippet [Handling the data received over UART] */
+}
 /**@brief Function for initializing the button handler module.
  */
 /*
@@ -780,6 +806,7 @@ int main(void)
     leds_init();
     timers_init();
     gpiote_init();
+    uart_init();
     // vng buttons_init();
     ble_stack_init();
     scheduler_init();    

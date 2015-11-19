@@ -55,10 +55,10 @@ static void on_write(ble_cis_t * p_cis, ble_evt_t * p_ble_evt)
     debug(0,"Handling on write \n\r ");
     if (
         (p_evt_write->handle == p_cis->led_char_handles.value_handle)
-        &&(p_evt_write->len == 1)&&(p_cis->led_write_handler != NULL)
+        &&(p_evt_write->len == 1)&&(p_cis->brew_coffee_handler != NULL)
        )
     {
-        p_cis->led_write_handler(p_cis, p_evt_write->data[0]);
+        p_cis->brew_coffee_handler(p_cis, p_evt_write->data[0]);
     }
 }
 
@@ -195,7 +195,7 @@ uint32_t ble_cis_init(ble_cis_t * p_cis, const ble_cis_init_t * p_cis_init)
 
     // Initialize service structure
     p_cis->conn_handle               = BLE_CONN_HANDLE_INVALID;
-    p_cis->led_write_handler         = p_cis_init->led_write_handler;
+    p_cis->brew_coffee_handler         = p_cis_init->brew_coffee_handler;
     
     err_code = sd_ble_uuid_vs_add(&base_uuid, &p_cis->uuid_type);
     if (err_code != NRF_SUCCESS)
